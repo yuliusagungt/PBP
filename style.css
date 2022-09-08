@@ -2,21 +2,20 @@ body{
     font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 
 }
+h1{
+    font-size: 4em;
+}
 body{
-    color : white;
+    color : black;
 }
 td{
     text-align: center;
 }
 
 td:hover{
-    color: #6698FF;
+    color: white;
     text-shadow: 1px 1px white;
 }
-table{
-    text-decoration-style: 1px 1px white;
-}
-
 tr{
     color: white;
 }
