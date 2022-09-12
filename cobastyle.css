@@ -1,0 +1,29 @@
+html {
+    font-style: italic;
+    background-color:blanchedalmond;
+    font-family :'Times New Roman', Times, serif
+}
+body{
+    font-size: larger;
+}
+
+h1 {
+    font-weight: bold;
+    text-align: center;
+    font-size: xx-large;
+}
+
+h4{
+    font-weight: bold;
+    font-size:150%;
+}
+p{
+    text-align: justify;
+    text-indent: 1%; 
+    line-height: 200%;
+}
+
+a:hover{
+    color : inherit;
+    text-shadow: 1px 1px black;
+}
