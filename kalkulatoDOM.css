@@ -1,0 +1,66 @@
+
+button {
+    border: 10px solid transparent;
+    border-radius: 0.6em;
+    margin-top: 4px;
+    margin-right: 5px;
+    margin-bottom: 7px;
+    margin-left: 6px;
+    font-size: 30px;
+    font-family: 'Courier New';
+}
+
+:active.angka {
+    background-color: rgb(246, 215, 183);
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
+}
+
+:active.operator {
+    background-color: rgb(252, 87, 26);
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
+}
+:active.clear {
+    background-color: rgb(252, 87, 26);
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
+}
+:active.samadengan {
+    background-color: rgb(252, 87, 26);
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
+}
+
+button.angka {
+    background-color: beige;
+}
+
+button.operator {
+    background-color: coral;
+}
+
+button.samadengan {
+    background-color: coral;
+    padding: 5px 78px;
+    border: 5px solid transparent;
+}
+
+button.clear {
+    background-color: coral;
+}
+p{  
+    text-align: center;
+}.inputan{
+    width : 270px;
+    height : 40px;
+    border: 2px solid black;
+    border-width: 2px;
+    border-radius: 0.6cm;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left:auto;
+    font-size: 30px;
+    font-weight: 200;
+}
