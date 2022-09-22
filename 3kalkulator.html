@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+</head>
+<body>
+    <h1>
+        Membuat Kalkulator Sederhana.
+    <script>
+        var hasil = 0;
+        var input1 = prompt("Masukan Angka 1");
+        var input2 = prompt("Masukan Angka 2");
+        var operator = prompt("Masukan Operator", "+ - / * %");
+
+        var a1 = parseFloat(input1);
+        var a2 = parseFloat(input2);
+
+        if(operator == '+'){
+            hasil = a1 + a2;
+            alert("Hasil Dari " + a1 + "+" + a2 + "=" +hasil);
+        }else if(operator == '-'){
+            hasil = a1 - a2;
+            alert("Hasil Dari " + a1 + "-" + a2 + "=" +hasil);
+        }else if(operator == '*'){
+            hasil = a1 * a2;
+            alert("Hasil Dari " + a1 + "*" + a2 + "=" +hasil);
+        }else if(operator == '/'){
+            hasil = a1 / a2;
+            alert("Hasil Dari " + a1 + "/" + a2 + "=" +hasil);
+        }else if(operator == '%'){
+            hasil = a1 % a2;
+            alert("Hasil Dari " + a1 + "%" + a2 + "=" +hasil);
+        }else{
+            alert("Input Anda Salah");
+        }
+        
+    </script>
+</body>
+</html>

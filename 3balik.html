@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Balik Huruf</title>
 </head>
+
 <body>
-    
-    <script src="balik.js"></script>
+    <h1>
+        Program Membalik Urutan Huruf dalam Suatu Kata.
+    </h1>
+    <script>
+        var nama = prompt("Masukan Kata")
+        balik(nama);
+
+        function balik(str) {
+            var lama = str;
+            var baru = '';
+
+            for (i = str.length - 1; i >= 0; i--) {
+                baru = baru + lama[i];
+            }
+            alert(baru);
+        }
+    </script>
 </body>
+
 </html>

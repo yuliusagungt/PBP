@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganjil Genap</title>
+</head>
+<body>
+    <h1>
+        Menghitung Jumlah Bilangan Genap atau Ganjil dalam Sebuah Range Bilangan Tertentu.
+    </h1>
+    <script>
+        var awal = prompt("Masukan Batas Bawah Range");
+        var akhir = prompt("Masukan Batas Akhir Range");
+        var tambahGenap = 0;
+        var tambahGanjil = 0;
+        arr = [];
+        arr1 = [];
+        arr2 = [];
+
+        for(i = awal; i<=akhir;i++){
+            arr.push(i);
+        }
+        alert("Array Utama : [" + arr +"]");
+
+        for(j = awal; j <= akhir; j++){
+            if(arr[j] % 2 ==0){
+                arr2.push(j);
+                tambahGenap = tambahGenap + parseFloat(j);
+            }else{
+                arr1.push(j);
+                tambahGanjil = tambahGanjil + parseFloat(j);
+            }
+        }
+            alert("Array Ganjil : [" + arr2 + "] Array Genap : [" + arr1 + "]");
+            alert("Jumlah Ganjil : " + arr1.length + " Jumlah Genap : " + arr2.length)
+            alert("Total Ganjil : " + tambahGenap + " Total Genap : " + tambahGanjil);
+            
+
+    </script>
+</body>
+</html>
