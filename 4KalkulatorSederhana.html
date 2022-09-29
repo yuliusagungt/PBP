@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Kalkulator</title>
+
+</head>
+
+<body>
+    <h1>Kalkulator Tambah/Kurang</h1>
+    <form>
+        <label for="bil1">Bilangan 1 : </label>
+        <input type="text" id="bil1" />
+        <br>
+
+        <label for="bil2">Bilangan 2 : </label>
+        <input type="text" id="bil2" />
+        <br>
+
+        <button type="button" id="tambah">Tambah</button>
+        <button type="button" id="kurang">Kurang</button>
+        <button type="button" id="kali">Kali</button>
+        <button type="button" id="bagi">Bagi</button>
+        <br><br>
+
+        <label for="out">Hasil : </label>
+        <input type="text" id="out" readonly />
+        <br>
+        <button type="reset">Reset</button>
+    </form>
+
+    <script type="text/javascript">
+        const btTambah = document.getElementById("tambah");
+        const btKurang = document.getElementById("kurang");
+        const btKali = document.getElementById("kali");
+        const btBagi = document.getElementById("bagi");
+
+        btTambah.addEventListener('click', function () {
+            const hasil = parseFloat(document.getElementById('bil1').value) + parseFloat(document.getElementById('bil2').value);
+            const ctk = document.getElementById('out');
+            ctk.value = hasil
+        });
+
+        btKurang.addEventListener('click', function () {
+            const hasil = parseFloat(document.getElementById('bil1').value) - parseFloat(document.getElementById('bil2').value);
+            const ctk = document.getElementById('out');
+            ctk.value = hasil
+        });
+
+        btKali.addEventListener('click', function () {
+            const hasil = parseFloat(document.getElementById('bil1').value) * parseFloat(document.getElementById('bil2').value);
+            const ctk = document.getElementById('out');
+            ctk.value = hasil
+        });
+
+        btBagi.addEventListener('click', function () {
+            const hasil = parseFloat(document.getElementById('bil1').value) / parseFloat(document.getElementById('bil2').value);
+            const ctk = document.getElementById('out');
+            ctk.value = hasil
+        });
+    </script>
+</body>
+
+</html>
