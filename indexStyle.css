@@ -1,0 +1,22 @@
+.container-fluid {
+  background: url("back_landing1.png"), linear-gradient(to left, #fbe5ff, #fff);
+  text-align: center;
+}
+
+#navbar {
+  background-color: #f2a8ff;
+  font-size: larger;
+}
+.btn-outline-dark {
+  background-color: #dc1afe;
+  color: #000;
+  letter-spacing: 1px;
+  line-height: 20px;
+  border-radius: 40px;
+}
+h1 {
+  font-size: 4vw;
+}
+h3 {
+  font-size: 2vw;
+}
