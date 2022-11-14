@@ -1,34 +1,52 @@
 .container-fluid {
-  /* background: url("back_landing1.png"), linear-gradient(to left, #fbe5ff, #fff);
+  /* background: url("back_landing1.png"), 
   background-size: cover;
   background-position: center; */
-  background: #fbe5ff;
+  background: #f9d7ff;
+}
+html {
+  scroll-behavior: smooth;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .card-text {
+    font-size: 0.5px;
+  }
 }
 #awal {
-  padding-top: 200px;
+  padding-top: 28vh;
 }
-#tentangkami {
-  margin-top: 170px;
+#kami {
+  padding-top: 10vh;
 }
-#anjing {
-  margin-top: 170px;
+#produk {
+  padding-top: 10vh;
 }
 #kucing {
-  margin-top: 170px;
+  padding-top: 10vh;
+}
+#jasa {
+  padding-top: 10vh;
 }
 #perawatan {
-  margin-top: 170px;
+  padding-top: 5vh;
+  padding-bottom: 10vh;
 }
 .card {
   margin: 0 auto;
   float: none;
 }
-#penitipan {
-  margin-top: 170px;
+.carousel {
+  width: 30vw;
 }
 #review {
-  margin-top: 170px;
-  padding-bottom: 170px;
+  padding-left: 35%;
+  padding-bottom: 5vh;
 }
 body {
   width: 100%;
@@ -64,9 +82,17 @@ h3 {
 .card-title {
   font-size: 1.5vw;
 }
-.card-text {
+/* .card-text {
   font-size: 1vw;
-}
+} */
 .list-group-item {
   font-size: 0.3vw;
+}
+.carousel-item {
+  color: #000;
+  background-color: #f2a8ff;
+}
+.carousel-inner {
+  border-color: #000;
+  border: #000;
 }
